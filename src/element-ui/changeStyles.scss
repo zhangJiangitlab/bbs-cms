@@ -1,0 +1,63 @@
+@import "../common/styles/index.scss";
+// 侧边栏菜单
+.el-menu {
+  background-color: $deep_black;
+  .el-submenu {
+    .el-submenu__title {
+      color: $div_bgColor;
+      i {
+        color: $div_bgColor;
+      }
+      &:hover {
+        background-color: $green;
+      }
+    }
+    .el-menu-item {
+      color: $div_bgColor;
+      &:hover {
+        background-color: $green;
+      }
+    }
+    //  被点击
+    .is-active {
+      background-color: $green;
+    }
+  }
+  .el-menu-item {
+    color: $div_bgColor;
+    i {
+      color: $div_bgColor;
+    }
+    &:hover {
+      background-color: $green;
+    }
+  }
+  .el-menu-item.is-active {
+    background-color: $green;
+  }
+}
+// 当侧边栏菜单折叠时的样式
+.el-menu--collapse {
+  .el-submenu {
+    .el-submenu__title {
+      span {
+        display: none;
+      }
+      .el-submenu__icon-arrow.el-icon-arrow-right {
+        display: none;
+      }
+    }
+  }
+}
+// 修改男性和女性图标颜色
+.el-icon-female,
+.el-icon-male {
+  font-size: 18px;
+  font-weight: bold;
+}
+.el-icon-female {
+  color: $jd_color;
+}
+.el-icon-male {
+  color: $blue;
+}
